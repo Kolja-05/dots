@@ -1,0 +1,42 @@
+{
+    "editor.fontFamily": "Consolas Nerd Font",
+    "terminal.integrated.fontFamily": "Consolas Nerd Font",
+    "editor.fontSize": 20,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "editor.tabCompletion": "off",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggestSelection": "first",
+    "vim.leader": " ",
+
+    "vim.normalModeKeyBindings": [
+        { "before": ["+"], "after": ["*"] },
+        { "before": ["ä"], "after": ["{"] },
+        { "before": ["ö"], "after": ["}"] },
+        {
+            "before": ["<leader>", "<"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>", "t", "d"],
+            "commands": ["workbench.action.terminal.newWithCwd"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        { "before": ["j", "j"], "after": ["<Esc>"] },
+        { "before": ["<C-k>"], "after": ["<Up>"] },
+        { "before": ["<C-j>"], "after": ["<Down>"] },
+        { "before": ["<C-h>"], "after": ["<Left>"] },
+        { "before": ["<C-l>"], "after": ["<Right>"] }
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+}

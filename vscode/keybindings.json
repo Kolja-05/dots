@@ -1,0 +1,73 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.showNext",
+    "when": "inlineSuggestionVisible && editorTextFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "shift+tab",
+    "command": "editor.action.inlineSuggest.showPrevious",
+    "when": "inlineSuggestionVisible && editorTextFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && editorTextFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "github.copilot.chat.completions.toggle"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.showHover",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+shift+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.newWithCwd",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "alt+shift+t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.newWithCwd",
+    "when": "terminalFocus"
+  },
+
+]
